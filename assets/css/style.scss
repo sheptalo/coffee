@@ -7,17 +7,21 @@
 
 body{
     font-family: "Roboto", system-ui;
-    background-color: #FFF7E1;
 }
 a{
     font-weight: inherit;
     font-size: inherit;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+}
 .news{
-    padding: 150px 0;
-    margin: 0 122px;
-    margin-top: 50px;
+
+    height: 1500px;
     &__upper{
+        padding: 0 122px;
+
         display: flex;
         justify-content: space-between;
         align-items: end;
@@ -38,6 +42,8 @@ a{
     }
 
     &__grid{
+        padding: 0 122px;
+        background: url('./../img/Group\ 247.png');
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 20px;
@@ -93,6 +99,7 @@ a{
         transition: 1s;
         transform: translateX(10px);
     }
+
 }
 .second{
     grid-column: 4/6;
@@ -103,13 +110,84 @@ a{
 }
 
 .instagram{
-    &__img{
+    position: absolute;
+    margin-top: -570px;
+    width: 100%;
+    &__bg{
+        margin-top: 450px;
         position: absolute;
+        width: 100%;
+
+    }
+    &__upper{
+        background-color: #FFF7E1;
+        display: flex;
+        gap: 40px;
+        align-items: start;
+        padding-left: 120px;
+        padding-top: 100px;
+        height: 450px;
+    }
+    &__img{
+        left: -200px;
+        position: absolute;
+        margin-top: -300px;
     }
     &__img-2{
         position: absolute;
         transform: scale(0.9);
         margin-top: 138px;
         margin-left: 200px;
+        left: -200px;
+        margin-top: -200px;
+
+
     }
+    &__title{
+        font-size: 50px;
+        font-weight: 900;
+    }
+}
+.sub{
+    margin-top: 600px;
+    padding-left: 122px;
+
+    &__link{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__title{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    &__text{
+        width: 750px;
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    &__coffee{
+        position: absolute;
+        margin-top: -300px;
+        right: 0;
+    }
+
+    &__form{
+        max-width: 800px;
+        height: 80px;   
+        background-color: #F3F3F3;
+        display: flex;
+        border-radius: 40px;
+        margin-bottom: 20px;
+        &__input{
+            border: 0;
+        }
+        &__input:last-child{
+        border-radius: 40px;
+        }
+    }
+} 
+.no-after::after{
+    content: '';
 }

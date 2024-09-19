@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <main>
+
     <section class="news">
         <div class="news__upper">   
             <h2 class="news__title">Новости компании</h2>
@@ -55,11 +57,14 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <section class="instagram">
-        <div>
-            <h2></h2>
+        <img class="instagram__bg" src="./assets/img/instagram-bg.png" alt="">
+        <div class="instagram__upper">
+            <h2 class="instagram__title">Мы в Instagram</h2>
+            <img src="./assets/img/instagram.png" alt="">
         </div>
         <div>
             <img class="instagram__img" src="./assets/img/айфон 2.png" alt="">
@@ -75,5 +80,25 @@
             </div>
         </div>
     </section>
+    <section class="sub">
+        <img class="sub__coffee" src="./assets/img/cofee.png" alt="">
+        <h2 class="sub__title">Подписка на новости и рассылку</h2>
+        <p class="sub__text">
+            Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
+        </p>
+        <form class="sub__form" action="">
+            <input class="sub__form__input" type="email" name="email" id="">
+            <input class="sub__form__input" type="submit" value="Подписаться">
+        </form>
+        <p>
+            Нажимая на кнопку “Подписаться”, вы принимаете правила 
+            <a class='sub__link card__link no-after' href="#">пользовательского соглашения</a>
+        </p>
+    </section>
+    <footer class="footer">
+
+    </footer>
+</main>
+
 </body>
 </html>
