@@ -10,14 +10,14 @@
     <main>
 
     <section class="news">
-        <div class="news__upper">   
+        <div class="news__upper container">   
             <h2 class="news__title">Новости компании</h2>
             <a class="news__all" href="#">Читать все</a>
         </div>
         <div class="news__grid">
             <div class="news__card">
                 <img src="./assets/img/lion.png" alt="">
-                <div class="card__block">
+                <div class="card__block container">
                     <h3 class="card__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
                     <p class="card__info">
                         Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="news__card second">
-                <div class="card__block">
+                <div class="card__block container">
                     <h3 class="card__title">Африканский кофе Кения АА</h3>
                     <p class="card__info">
                         Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
@@ -38,7 +38,7 @@
             </div>
 
             <div class="news__card third">
-                <div class="card__block">
+                <div class="card__block container">
                     <h3 class="card__title">Африканский кофе Кения АА</h3>
                     <p class="card__info">
                         Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
@@ -48,7 +48,7 @@
             </div>
             <div class="news__card">
                 <img src="./assets/img/lion.png" alt="">
-                <div class="card__block">
+                <div class="card__block container">
                     <h3 class="card__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
                     <p class="card__info">Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. 
                         <br><br>
@@ -61,22 +61,28 @@
     </section>
 
     <section class="instagram">
-        <img class="instagram__bg" src="./assets/img/instagram-bg.png" alt="">
+        <img class="instagram__bg" src="./assets/img/instagram/instagram-bg.png" alt="">
         <div class="instagram__upper">
             <h2 class="instagram__title">Мы в Instagram</h2>
-            <img src="./assets/img/instagram.png" alt="">
+            <img src="./assets/img/instagram/instagram.png" alt="">
         </div>
         <div>
-            <img class="instagram__img" src="./assets/img/айфон 2.png" alt="">
-            <img class="instagram__img-2" src="./assets/img/айфон 2.png" alt="">
+            <img class="instagram__img" src="./assets/img/instagram/айфон.png" alt="">
+            <img class="instagram__img-2" src="./assets/img/instagram/айфон.png" alt="">
 
             <div class="instagram__grid">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <!-- <img src="./assets/img/instagram/box.png" alt="">
+                <img src="./assets/img/instagram/box.png" alt="">
+                <img src="./assets/img/instagram/box.png" alt="">
+                <img src="./assets/img/instagram/box.png" alt="">
+                <img src="./assets/img/instagram/box.png" alt="">
+                <img src="./assets/img/instagram/box.png" alt=""> -->
+                <div class="instagram__grid__item"></div>
+                <div class="instagram__grid__item"></div>
+                <div class="instagram__grid__item"></div>
+                <div class="instagram__grid__item"></div>
+                <div class="instagram__grid__item"></div>
+                <div class="instagram__grid__item"></div>
             </div>
         </div>
     </section>
@@ -86,7 +92,7 @@
         <p class="sub__text">
             Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.
         </p>
-        <form class="sub__form" action="">
+        <form class="sub__form container" action="">
             <input class="sub__form__input" type="email" name="email" id="">
             <input class="sub__form__input" type="submit" value="Подписаться">
         </form>
@@ -95,8 +101,13 @@
             <a class='sub__link card__link no-after' href="#">пользовательского соглашения</a>
         </p>
     </section>
-    <footer class="footer">
-
+    <footer class="footer container">
+        <img src="./assets/img/logo.png" alt="">
+        <div class="footer__block">
+            <a class="footer__link" href="#">Каталог товаров</a>
+            <a class="footer__link" href="#">Блог</a>
+            <a class="footer__link" href="#">Контакты</a>
+        </div>
     </footer>
 </main>
 

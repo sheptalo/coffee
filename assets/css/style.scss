@@ -12,6 +12,10 @@ a{
     font-weight: inherit;
     font-size: inherit;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -22,8 +26,7 @@ a{
     &__upper{
         padding: 0 122px;
 
-        display: flex;
-        justify-content: space-between;
+
         align-items: end;
         margin-bottom: 60px;
     }
@@ -43,7 +46,7 @@ a{
 
     &__grid{
         padding: 0 122px;
-        background: url('./../img/Group\ 247.png');
+        background: url('./../img/grid-bg.png');
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 20px;
@@ -73,9 +76,7 @@ a{
     box-shadow: 0 0 20px #92929233;
     &__block{
         width: 620px;
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: left;
         padding: 40px 84px;
     }
@@ -113,11 +114,27 @@ a{
     position: absolute;
     margin-top: -570px;
     width: 100%;
+    &__grid{
+        position: absolute;
+        right: 0;
+        display: grid;
+        margin-top: -250px;
+        height: 784px;
+        gap: 20px;
+        grid-template-columns: repeat(2, 400px) 242px;
+        max-width: 1082px;
+        &__item{
+            border-radius: 10px;
+            max-width: 400px;
+            height: 100%;
+            background-color: #E9E9E9;
+        }
+    }
     &__bg{
+        z-index: -1;
         margin-top: 450px;
         position: absolute;
         width: 100%;
-
     }
     &__upper{
         background-color: #FFF7E1;
@@ -140,8 +157,6 @@ a{
         margin-left: 200px;
         left: -200px;
         margin-top: -200px;
-
-
     }
     &__title{
         font-size: 50px;
@@ -149,7 +164,7 @@ a{
     }
 }
 .sub{
-    margin-top: 600px;
+    margin-top: 650px;
     padding-left: 122px;
 
     &__link{
@@ -169,7 +184,7 @@ a{
     }
     &__coffee{
         position: absolute;
-        margin-top: -300px;
+        margin-top: -200px;
         right: 0;
     }
 
@@ -177,17 +192,38 @@ a{
         max-width: 800px;
         height: 80px;   
         background-color: #F3F3F3;
-        display: flex;
         border-radius: 40px;
         margin-bottom: 20px;
         &__input{
+            background-color: inherit;
             border: 0;
+            border-radius: 40px;
+            width: 80%;
         }
         &__input:last-child{
-        border-radius: 40px;
+            color:#fff;
+            background-color: #F9B300;
+            border-radius: 40px;
+            width: 260px;
         }
     }
 } 
+.footer{
+    margin-top: 189px;
+    padding: 0 122px;
+    margin-bottom: 100px;
+    align-items: center;
+    &__link{
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    &__block{
+        display: flex;
+        gap: 100px;
+    }
+}
 .no-after::after{
     content: '';
 }
